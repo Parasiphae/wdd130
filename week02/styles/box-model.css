@@ -1,15 +1,33 @@
 .callout {
+    box-sizing: border-box;
+    width: 400px;
+    max-width: 60%;
+    margin: 10px;
+    border: 1px solid #000000;
+    background-color: navy;
+    padding: 15px;
     /* write declarations here */
 }
 
 .callout img {
+    size: 20%;
+    align-items: flex-end;
+    padding: 1px solid rgb (0 0 0 / 10%);
+    float: right;
+    margin: 15px;
+
     /* write declarations here */
 }
 
 blockquote {
+    color: ivory;
+    size: 10rem;
     /* write declarations here */
 }
 
 cite {
+    color: ivory;
+    text-align: end;
+    top border: ;
     /* write declarations here */
 }
