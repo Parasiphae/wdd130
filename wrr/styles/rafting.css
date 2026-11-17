@@ -47,7 +47,7 @@ article {
 
 /* class selectors*/
 
-.hero div {
+.hero {
     position: relative;
 }
 
