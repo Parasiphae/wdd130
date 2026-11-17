@@ -5,8 +5,8 @@
     --background-color: #f4f6f8;
     --text-color: #2b2d42;
     --card-background: #ffffff;
-    --heading-font: 'Bebas Neue', sans-serif;
-    --body-font: 'Roboto', sans-serif;
+    --heading-font: sans-serif;
+    --body-font: sans-serif;
 }
 
 * {
