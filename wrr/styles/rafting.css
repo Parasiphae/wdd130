@@ -1,0 +1,85 @@
+:root {
+    --primary-color: #1b4965;
+    --secondary-color: #62b6cb;
+    --accent-color: #ee6c4d;
+    --background-color: #f4f6f8;
+    --text-color: #2b2d42;
+    --card-background: #ffffff;
+    --heading-font: 'Bebas Neue', sans-serif;
+    --body-font: 'Roboto', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--accent-color);
+}
+
+header,
+main,
+footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+nav,
+p,
+section,
+article {
+    margin: 16px;
+    padding: 8px;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+/* class selectors*/
+
+.hero div {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    position: absolute;
+    top: 850px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.9;
+    background-color: var(--accent-color);
+    color: var(--background-color);
+}
+
+article {
+    position: absolute;
+    font-family: var(--body-font);
+    color: var(--text-color);
+}
+
+.hero article img {
+
+    margin: 125px;
+    border: 5px;
+    box-shadow: var(--card-background);
+    width: 100%;
+    height: auto;
+
+}
