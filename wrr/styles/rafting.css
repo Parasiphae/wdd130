@@ -59,11 +59,11 @@ article {
 
 .hero h1 {
     position: absolute;
-    top: 850px;
+    top: 10px;
     width: 100%;
     padding: 16px;
     text-align: center;
-    opacity: 0.9;
+    opacity: 0.7;
     background-color: var(--accent-color);
     color: var(--background-color);
 }
@@ -72,14 +72,25 @@ article {
     position: absolute;
     font-family: var(--body-font);
     color: var(--text-color);
+    bottom: 5px;
+    background-color: white;
+    height: 35%;
+    text-align: justify;
+    opacity: 1;
+    width: 50%;
+    font-weight: bold;
 }
 
 .hero article img {
     float: right;
-    margin: 125px;
+    margin: 12px;
     border: 5px;
     box-shadow: var(--card-background);
-    width: 100%;
+    width: 200px;
     height: auto;
+}
 
+.socialmedia img {
+    width: 10%;
+    height: auto;
 }
