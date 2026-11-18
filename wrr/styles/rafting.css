@@ -68,7 +68,7 @@ article {
     color: var(--background-color);
 }
 
-article {
+.hero article {
     position: absolute;
     font-family: var(--body-font);
     color: var(--text-color);
