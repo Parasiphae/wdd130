@@ -65,7 +65,7 @@ article {
     text-align: center;
     opacity: 0.7;
     background-color: var(--accent-color);
-    color: var(--background-color);
+    color: var(--primary-color);
 }
 
 .hero article {
