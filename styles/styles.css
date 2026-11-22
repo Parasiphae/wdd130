@@ -105,6 +105,10 @@ footer {
     border-top: var(--border-dark);
 }
 
+a {
+    text-decoration: none;
+}
+
 /* Class Selectors */
 .box {
     margin: 1rem;
