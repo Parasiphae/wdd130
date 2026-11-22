@@ -95,3 +95,8 @@ article {
     width: 10%;
     height: auto;
 }
+
+.grid {
+    display: grid;
+
+}
