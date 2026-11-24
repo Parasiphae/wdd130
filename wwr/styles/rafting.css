@@ -13,12 +13,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: var(--background-color);
 }
 
 body {
     font-family: var(--body-font);
-    color: var(--accent-color);
+    color: var(--text-color);
+    background-color: var(--background-color);
 }
 
 header,
@@ -34,29 +34,53 @@ h2 {
     color: var(--secondary-color);
 }
 
-ul {
+/* Header & Navigation */
+
+header.grid {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    align-items: center;
+    background-color: var(--primary-color);
+    padding: 12px 24px;
+    margin-bottom: 16px;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    display: block;
+}
+
+nav.flex {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
     list-style-type: none;
     margin: 0;
     padding: 0;
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    z-index: 1000;
 }
 
-li a {
+nav li a {
     display: block;
-    color: black;
+    color: var(--card-background);
     padding: 8px 16px;
     text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
 }
 
-li a:hover {
+nav li a:hover {
     background-color: var(--accent-color);
-    color: white;
+    color: var(--card-background);
 }
 
-nav,
 p,
 section,
 article {
@@ -68,7 +92,7 @@ article {
     text-decoration: none;
 }
 
-/* class selectors*/
+/* Hero Section */
 
 .hero {
     position: relative;
@@ -86,7 +110,7 @@ article {
     width: 100%;
     padding: 16px;
     text-align: center;
-    opacity: 0.7;
+    opacity: 0.85;
     background-color: var(--accent-color);
     color: var(--primary-color);
 }
@@ -96,10 +120,9 @@ article {
     font-family: var(--body-font);
     color: var(--text-color);
     bottom: 5px;
-    background-color: white;
+    background-color: var(--card-background);
     height: 35%;
     text-align: justify;
-    opacity: 1;
     width: 50%;
     font-weight: bold;
 }
@@ -107,8 +130,6 @@ article {
 .hero article img {
     float: right;
     margin: 12px;
-    border: 5px;
-    box-shadow: var(--card-background);
     width: 200px;
     height: auto;
 }
@@ -117,29 +138,53 @@ article {
     height: auto;
     width: 183px;
     margin: 12px;
-    border: 5px;
     position: relative;
     top: 12px;
     right: 3px;
 }
 
+/* History Section */
+
+.history {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 20px;
+    align-items: center;
+    background-color: var(--card-background);
+    padding: 24px;
+    border-radius: 8px;
+}
+
+.history h2 {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.history img {
+    align-self: center;
+    height: 12rem;
+    width: auto;
+    border-radius: 6px;
+}
+
+.history p {
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+}
+
+/* Footer & Utility Classes */
+
 .socialmedia img {
-    width: 10%;
+    width: 32px;
     height: auto;
 }
 
 .grid {
     display: grid;
-
 }
 
 .flex {
     display: flex;
-
-}
-
-.logo {
-    width: 15%;
-    position: fixed;
-    left: 50px;
 }
