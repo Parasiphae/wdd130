@@ -34,6 +34,28 @@ h2 {
     color: var(--secondary-color);
 }
 
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+}
+
+li a {
+    display: block;
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: var(--accent-color);
+    color: white;
+}
+
 nav,
 p,
 section,
@@ -91,6 +113,16 @@ article {
     height: auto;
 }
 
+.hero article p {
+    height: auto;
+    width: 183px;
+    margin: 12px;
+    border: 5px;
+    position: relative;
+    top: 12px;
+    right: 3px;
+}
+
 .socialmedia img {
     width: 10%;
     height: auto;
@@ -99,4 +131,15 @@ article {
 .grid {
     display: grid;
 
+}
+
+.flex {
+    display: flex;
+
+}
+
+.logo {
+    width: 15%;
+    position: fixed;
+    left: 50px;
 }
