@@ -76,11 +76,6 @@ nav li a {
     transition: background-color 0.2s ease;
 }
 
-nav li a:hover {
-    background-color: var(--accent-color);
-    color: var(--card-background);
-}
-
 p,
 section,
 article {
